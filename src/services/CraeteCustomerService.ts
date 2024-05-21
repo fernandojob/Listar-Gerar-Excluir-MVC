@@ -5,7 +5,7 @@ interface CreateCustomerProps{
   email : string
 }
 
-class CraeteCustomerService {
+export class CraeteCustomerService {
   async execute({name, email} : CreateCustomerProps) {
    if (!name || !email) {
     throw new Error("Preencha todos os campos ")
@@ -24,4 +24,3 @@ class CraeteCustomerService {
   }
 }
 
-export {CraeteCustomerService}

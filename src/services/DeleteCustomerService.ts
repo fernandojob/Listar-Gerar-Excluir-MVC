@@ -4,7 +4,7 @@ interface DeleteCustomerProps{
   id: string
 }
 
-class DeleteCustomerService{
+export class DeleteCustomerService{
   async execute({id} : DeleteCustomerProps) {
 
     if (!id) {
@@ -32,4 +32,3 @@ class DeleteCustomerService{
   }
 }
 
-export { DeleteCustomerService}
